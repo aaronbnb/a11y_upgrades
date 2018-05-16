@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -59,7 +63,18 @@
   return you back to the main page</div>
 </div>
 
+<a href="/show.html">Go to Show</a>
 
+<div id="dynamic-link">v
+
+</div>
+
+<script type="text/javascript">
+  var link = $('<a>');
+  link.text("Show off");
+  link.attr("href", "/show.html")
+  $('#dynamic-link').append(link);
+</script>
 
   </body>
 </html>
